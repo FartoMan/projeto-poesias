@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding: 20px 0px;
+    background-image: linear-gradient(to bottom, lightgray, gray 90%);
+    text-align: center;
+}
+
+.menu {
+    max-width: 700px;
+    padding: 4px 0px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.menu a {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+
+.menu > ul > li {
+    display: inline;
+}
+
+.menu > ul > li > ul > li {
+    float: none;
+    display: list-item;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+main {
+    margin: auto;
+    max-width: 700px;
+}
+
+#dia {
+    padding-left: 30px;
+}
+
+.poema, .texto {
+    padding-left: 45px;
+}
+
+section, article {
+    border: 1px solid black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: right;
+}

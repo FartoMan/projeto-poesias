@@ -4,57 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Projeto Textos e Poesias</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        main {
-            margin: auto;
-            max-width: 700px;
-        }
-
-        #dia {
-            padding-left: 30px;
-        }
-
-        .poema, .texto {
-            padding-left: 45px;
-        }
-
-        section, article {
-            border: 1px solid black;
-        }
-
-        footer {
-            background-color: black;
-            color: white;
-            padding: 5px;
-            text-align: right;
-        }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>Textos e Poesias 2014</h1>
+        <h1>Textos e Poesias<br>2014</h1>
     </header>
-    <nav>
-        <a href="#mesmarco">Março</a>
-        <a href="#semdata3-9">Março ~ Setembro</a>
-        <a href="#messetembro">Setembro</a>
-        <a href="#mesoutubro">Outubro</a>
-        <a href="#alemdotempo">Além do Tempo</a>
+    <nav class="menu">
+        <ul>
+            <li><a href="#mesmarco">Março</a>
+                <ul>
+                    <li><a href="#dia1703">17 de março</a></li>
+                    <li><a href="#dia2103">21 de março</a></li>
+                </ul>
+            </li>
+            <li><a href="#semdata3-9">Março ~ Setembro</a></li>
+            <li><a href="#messetembro">Setembro</a></li>
+            <li><a href="#mesoutubro">Outubro</a></li>
+            <li><a href="#alemdotempo">Além do Tempo</a></li>
+        </ul>
     </nav>
     <main>
         <section id="mesmarco">
             <h2>Março</h2>
-            <section id="dia">
+            <section id="dia1703">
                 <h3>17 de março, 2014</h3>
                 <article class="poema">
                     <h1>Essência</h1>
@@ -84,7 +61,7 @@
                     </p>
                 </article>
             </section>
-            <section id="dia">
+            <section id="dia2103">
                 <h3>21 de março, 2014</h3>
                 <article class="poema">
                     <h1>Chamada</h1>
