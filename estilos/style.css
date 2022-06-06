@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Dark Twenty';
+    src: url('../fontes/Dark\ Twenty.otf');
+}
+
+@font-face {
+    font-family: 'Patrick Hand';
+    src: url('../fontes/PatrickHand-Regular.ttf');
+}
+
+:root {
+    --fonttitulo: 'Dark Twenty';
+    --fontpoesia: 'Patrick Hand';
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,6 +24,10 @@ header {
     padding: 20px 0px;
     background-image: linear-gradient(to bottom, lightgray, gray 90%);
     text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonttitulo);
 }
 
 .menu {
@@ -54,16 +73,65 @@ main {
     max-width: 700px;
 }
 
-#dia {
-    padding-left: 30px;
+section, article {
+    padding: 5px;
+    margin: 5px 0px;
+    border: 1px solid black;
+}
+
+section h2, h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+section > p {
+    padding: 5px;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 1em;
 }
 
 .poema, .texto {
-    padding-left: 45px;
+    padding-left: 30px;
 }
 
-section, article {
-    border: 1px solid black;
+article h1 {
+    padding: 10px 0px 15px 0px;
+    font-family: var(--fonttitulo);
+    font-weight: bolder;
+    font-size: 8vmin;
+}
+
+article.poema p {
+    margin-bottom: 1.55em;
+    font-family: var(--fontpoesia);
+    font-size: 1.5em;
+    line-height: 1.35em;
+}
+
+article.poema div {
+    display: inline-block;
+}
+
+article.poema div > p {
+    font-size: 1.5em;
+}
+
+article.poema div.dir {
+    text-align: right;
+}
+
+article.poema div.esq {
+    text-align: left;
+}
+
+article.texto p {
+    margin-bottom: 1.05em;
+    font-size: 1.2em;
+    font-family: var(--fontpoesia);
+    line-height: 1.35em;
 }
 
 footer {
