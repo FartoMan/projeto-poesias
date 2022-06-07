@@ -13,6 +13,15 @@
 :root {
     --fonttitulo: 'Dark Twenty';
     --fontpoesia: 'Patrick Hand';
+
+    --corheader1: #7AD0F0;
+    --corheader2: #3385A3;
+
+    --cor1: #F2DCC4;
+    --cor2: #F0B77A;
+    --cor3: #BD9060;
+    --cor4: #705639;
+    --cor5: #70665B;
 }
 
 * {
@@ -20,29 +29,48 @@
     padding: 0px;
 }
 
+body {
+    background-color: var(--cor5);
+}
+
 header {
     padding: 20px 0px;
-    background-image: linear-gradient(to bottom, lightgray, gray 90%);
+    background-image: linear-gradient(to bottom, var(--corheader2), var(--corheader1) 90%);
     text-align: center;
+
+    box-shadow: 0px 2px 5px black;
 }
 
 header > h1 {
     font-family: var(--fonttitulo);
+    font-size: 2.7em;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.19);
 }
 
 .menu {
+    font-family: cursive;
+
     max-width: 700px;
-    padding: 4px 0px;
-    margin: auto;
-    margin-bottom: 30px;
+    padding: 4px 0px;;
+    margin: 15px auto;
     text-align: center;
 }
 
 .menu a {
-    background-color: gray;
-    color: white;
+    padding: 5px 15px;
+    background-color: var(--corheader1);
+    color: black;
     text-decoration: none;
     font-weight: bolder;
+    border-radius: 3px;
+}
+
+.menu a:hover {
+    background-color: var(--corheader2);
+}
+
+.menu li ul a {
+    padding: 0px;
 }
 
 .menu ul{
@@ -71,26 +99,49 @@ header > h1 {
 main {
     margin: auto;
     max-width: 700px;
+
+    background-image: linear-gradient(to right, transparent, var(--cor4), var(--cor3), var(--cor4), transparent);
+    background-position: center;
 }
 
 section, article {
     padding: 5px;
     margin: 5px 0px;
-    border: 1px solid black;
+}
+
+section {
+    margin-bottom: 15px;
+    background-color: var(--cor2);
+    box-shadow: 0px -1px 5px black;
+    border-radius: 7px;
+}
+
+section > section {
+    margin-bottom: 7px;
+    background-color: var(--cor3);
+    box-shadow: 1px -1px 4px black;
+    border-radius: 10px 10px 5px 5px;
+}
+
+section > section > article {
+    background-color: var(--cor1);
+    box-shadow: inset 0px 0px 7px black;
 }
 
 section h2, h3 {
+    font-family: cursive;
     text-align: center;
     padding: 10px;
 }
 
 section > p {
+    font-family: cursive;
     padding: 5px;
     text-align: center;
 }
 
 section h3 {
-    font-size: 1em;
+    font-size: 1em;;
 }
 
 .poema, .texto {
@@ -99,9 +150,11 @@ section h3 {
 
 article h1 {
     padding: 10px 0px 15px 0px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
     font-family: var(--fonttitulo);
     font-weight: bolder;
     font-size: 8vmin;
+    color: var(--cor5);
 }
 
 article.poema p {
@@ -129,7 +182,7 @@ article.poema div.esq {
 
 article.texto p {
     margin-bottom: 1.05em;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: var(--fontpoesia);
     line-height: 1.35em;
 }
