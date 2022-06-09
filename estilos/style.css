@@ -49,20 +49,21 @@ header > h1 {
 
 nav {
     font-family: cursive;
-    width: 700px;
-    height: 60px;
+    max-width: 700px;
+    min-height: 60px;
     margin: auto;
     position: sticky;
     top: 2px;
 }
 
 nav ul {
+    text-align: center;
     list-style-type: none;
-    overflow: hidden;
+    overflow: auto;
 }
 
 nav li {
-    float: left;
+    display: inline;
 }
 
 nav a, .dropbtn {
@@ -80,6 +81,10 @@ nav a:hover {
     background-color: var(--corheader2);
 }
 
+li > a:active {
+    color: white;
+}
+
 li.dropdown {
     display: inline-block;
 }
@@ -87,11 +92,14 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
+    box-shadow: 0px 0px 8px black;
 }
 
 .dropdown-content a {
+    background-color: #7ad0f0e7;
     margin-bottom: 2px;
     display: block;
+    transition-duration: 0.2s;
 }
 
 .dropdown:hover .dropdown-content{
