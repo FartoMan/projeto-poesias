@@ -16,16 +16,47 @@
     </header>
     <nav class="menu">
         <ul>
-            <li><a href="#mesmarco">Março</a>
-                <ul>
-                    <li><a href="#dia1703">17 de março</a></li>
-                    <li><a href="#dia2103">21 de março</a></li>
-                </ul>
+            <li class="dropdown">
+                <a href="#mesmarco" class="dropbtn">Março</a>
+                <div class="dropdown-content">
+                    <a href="#dia1703">17 de março</a>
+                    <a href="#dia2103">21 de março</a>
+                </div>
             </li>
-            <li><a href="#semdata3-9">Março ~ Setembro</a></li>
-            <li><a href="#messetembro">Setembro</a></li>
-            <li><a href="#mesoutubro">Outubro</a></li>
-            <li><a href="#alemdotempo">Além do Tempo</a></li>
+            <li class="dropdown">
+                <a href="#semdata3-9" class="dropbtn">Março ~ Setembro</a>
+                <div class="dropdown-content">
+                    <a href="#p-osb">Observações sobre o bar</a>
+                    <a href="#p-nb">No Bar</a>
+                    <a href="#p-ns">Não Sei</a>
+                    <a href="#p-na">Noite Adentro</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#messetembro" class="dropbtn">Setembro</a>
+                <div class="dropdown-content">
+                    <a href="#dia0209">02 de setembro</a>
+                    <a href="#dia1509">15 de setembro</a>
+                    <a href="#dia2209">22 de setembro</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#mesoutubro" class="dropbtn">Outubro</a>
+                <div class="dropdown-content">
+                    <a href="#dia1510">15 de outubro</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#alemdotempo" class="dropbtn">Além do Tempo</a>
+                <div class="dropdown-content">
+                    <a href="#p-cf">Com Fusão</a>
+                    <a href="#p-af">A Festa</a>
+                    <a href="#p-af2">A fábrica</a>
+                    <a href="#t-v">Viajar</a>
+                    <a href="#p-c">Cortês</a>
+                    <a href="#p-pp">Poema em Pó</a>
+                </div>
+            </li>
         </ul>
     </nav>
     <main>
@@ -105,7 +136,7 @@
             <h2>Entre março e setembro</h2>
             <section id="dia">
                 <p>(Sem Data)</p>
-                <article class="poema">
+                <article class="poema" id="p-osb">
                     <h1>Observação sobre o Bar</h1>
                     <p>
                         Já observou as pessoas no bar <br>
@@ -117,7 +148,7 @@
                         Sem entenderem nada
                     </p>
                 </article>
-                <article class="poema">
+                <article class="poema" id="p-nb">
                     <h1>No Bar</h1>
                     <p>
                         Sozinho no bar <br>
@@ -152,7 +183,7 @@
                         que só, estava a escrever.
                     </p>
                 </article>
-                <article class="poema">
+                <article class="poema" id="#p-ns">
                     <h1>Não Sei</h1>                    
                     <p>
                         Sem entender nada <br>
@@ -185,7 +216,7 @@
                         Choremos vossas lágrimas ácidas
                     </p>
                 </article>
-                <article class="poema">
+                <article class="poema" id="p-na">
                     <h1>Noite Adentro</h1>
                     <p>
                         Noite adentro depois de foda lá fora <br>
@@ -218,19 +249,7 @@
         </section>
         <section id="messetembro">
             <h2>Setembro</h2>
-            <section id="dia">
-                <p>22 de setembro, 2014</p>
-                <article class="texto">
-                    <h1>Dentro de mim</h1>
-                    <p>Já não sei o que se passa em minha mente. Dos mortos, vieram vozes e mais nada.</p>
-                    <p>Os mortos que carrego dentro de mim estão, dentro de mim, mortos.</p>
-                    <p>Fúnebre, mas não vejo lápides nem rosas, nem lamentos.</p>
-                    <p>Vejo um céu, um Sol e eu, no mais puro prazer de não fazer nada, pois tudo serve para nada e como nada para o mar. É fazer nada, mas ter que nadar para não se afogar.</p>
-                    <p>E, agora, sinto estar me afogando dentro de mim. Dentro de mim não há mar. Dentro de mim há um Sol e sinto-me queimar: de vontade, de amor, de dor, de combustão e viro fumaça e me disperso.</p>
-                    <p>Dentro de mim há uma cova. Dentro de mim de mim de mim de mim de mim...</p>
-                </article>
-            </section>
-            <section id="dia">
+            <section id="dia0209">
                 <p>02 de setembro, 2014</p>
                 <article class="poema">
                     <h1>A noite clara</h1>
@@ -266,7 +285,7 @@
                     </p>
                 </article>
             </section>
-            <section id="dia">
+            <section id="dia1509">
                 <p>15 de setembro, 2014</p>
                 <article class="poema">
                     <h1>Me perder na ficção</h1>
@@ -300,10 +319,22 @@
                     </p>
                 </article>
             </section>
+            <section id="dia2209">
+                <p>22 de setembro, 2014</p>
+                <article class="texto">
+                    <h1>Dentro de mim</h1>
+                    <p>Já não sei o que se passa em minha mente. Dos mortos, vieram vozes e mais nada.</p>
+                    <p>Os mortos que carrego dentro de mim estão, dentro de mim, mortos.</p>
+                    <p>Fúnebre, mas não vejo lápides nem rosas, nem lamentos.</p>
+                    <p>Vejo um céu, um Sol e eu, no mais puro prazer de não fazer nada, pois tudo serve para nada e como nada para o mar. É fazer nada, mas ter que nadar para não se afogar.</p>
+                    <p>E, agora, sinto estar me afogando dentro de mim. Dentro de mim não há mar. Dentro de mim há um Sol e sinto-me queimar: de vontade, de amor, de dor, de combustão e viro fumaça e me disperso.</p>
+                    <p>Dentro de mim há uma cova. Dentro de mim de mim de mim de mim de mim...</p>
+                </article>
+            </section>
         </section>
         <section id="mesoutubro">
             <h2>Outubro</h2>
-            <section id="dia">
+            <section id="dia1510">
                 <p>15 de outubro, 2014</p>
                 <article class="poema">
                     <h1>A vida é...</h1>
@@ -340,7 +371,7 @@
             <h2>Além do Tempo</h2>
             <section id="dia">
                 <p>(Sem data)</p>
-                <article class="poema">
+                <article class="poema" id="p-cf">
                     <h1>Com Fusão</h1>
                     <p>
                         Confusão <br>
@@ -349,7 +380,7 @@
                         fusão
                     </p>
                 </article>
-                <article class="poema">
+                <article class="poema" id="p-af">
                     <h1>A festa</h1>
                     <p>
                         Vai começar a festa <br>
@@ -373,7 +404,7 @@
                         Reclamarão
                     </p>
                 </article>
-                <article class="poema">
+                <article class="poema" id="p-af2">
                     <h1>A fábrica</h1>
                     <p>
                         Todos os dias eu me sentava <br>
@@ -415,14 +446,14 @@
                         o tempo, as nuvens, os pássaros
                     </p>
                 </article>
-                <article class="texto">
+                <article class="texto" id="t-v">
                     <h1>Viajar</h1>
                     <p>Vou viajar para longe daqui. Chamei papai, mamãe, irmãos e a titia. Preparamos as malas e vamos levar Totó. Vamos ir de ônibus, Totó não pode ir, não temos jaula. Totó chorou.</p>
                     <p>Na estação, titia que é solteira, cortejou o motorista. Mamãe e papai riram e meus irmãos cantaram. Eu lembrei de Totó.</p>
                     <p>A viajem foi longa. Durante o trajeto, o ônibus estragou duas vezes. Papai reclamou, disse que nunca mais vai n mais barato. Mamãe olhou a mata na beira da estrada e pareceu feliz. Acompanhei ela. Os irmão dormiam e nem notaram a parada. Titia sumiu. O motorista também. O mecânico chegou. Depois, seguimos a viajem. Titia estava alegre. O motorista assobiava.</p>
                     <p>Chegamos. Já era noite. Dormi no hotel. Todos dormiram.</p>
                 </article>
-                <article class="poema">
+                <article class="poema" id="p-c">
                     <h1>Cortês</h1>
                     <p>
                         Se sou cortês <br>
@@ -443,7 +474,7 @@
                         Eu amo!
                     </p>
                 </article>
-                <article class="poema">
+                <article class="poema" id="p-pp">
                     <h1>Poema em Pó</h1>
                     <p>
                         Escrevamos poemas <br>
